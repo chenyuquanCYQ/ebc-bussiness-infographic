@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EBC 臨床研究商業切入點</title>
+    <title>EBC 臨床研究商業切入點 - 全方位呼吸組學解決方案</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
@@ -14,22 +14,6 @@
     Highlight Emerald: #059669
     Card White: #FFFFFF
     Background: #F8FAFC
-    -->
-    <!-- 
-    Plan Summary:
-    1. Hero/Intro: Establish EBC as the non-invasive bridge in clinical research.
-    2. Modality Comparison: Compare EBC, BALF, and Blood tests across key metrics.
-    3. Strategic Area A (ICU): Highlight IPA detection and GM levels.
-    4. Strategic Area B (Asthma): Highlight biomarker phenotyping (SAA correlations).
-    5. Strategic Area C (Mass Screening): Highlight scale and epigenetics.
-    6. Go-To-Market: Show the 3-step business strategy using HTML/CSS flow.
-    -->
-    <!--
-    Visualization Choices:
-    1. Comparison -> Radar Chart (Chart.js) -> Compare modalities on multiple axes. CONFIRM NO SVG.
-    2. ICU/IPA Data -> Single Big Number + Donut Chart (Chart.js) -> Show trial size comparison. CONFIRM NO SVG.
-    3. Asthma Biomarkers -> Horizontal Bar Chart (Chart.js) -> Show correlation coefficients ranking. CONFIRM NO SVG.
-    4. GTM Strategy -> HTML/CSS Grid -> Organize process flow. CONFIRM NO SVG & NO MERMAID.
     -->
     <style>
         body {
@@ -43,12 +27,12 @@
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
-            height: 300px;
-            max-height: 400px;
+            height: 350px;
+            max-height: 450px;
         }
         @media (min-width: 768px) {
             .chart-container {
-                height: 350px;
+                height: 400px;
             }
         }
         .gradient-text {
@@ -70,8 +54,8 @@
             <div class="text-2xl font-black text-blue-600 tracking-tighter">KONOS BIOMEDICAL<span class="text-pink-600"> EBC</span></div>
             <div class="hidden md:flex space-x-8">
                 <a href="#value-prop" class="text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors">核心價值</a>
-                <a href="#icu-market" class="text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors">重症監護</a>
-                <a href="#asthma-market" class="text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors">精準醫療</a>
+                <a href="#icu-market" class="text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors">重症檢測</a>
+                <a href="#voc-market" class="text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors">VOC代謝組學</a>
                 <a href="#gtm-strategy" class="text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors">商業策略</a>
             </div>
         </div>
@@ -81,22 +65,22 @@
 
         <section id="hero" class="text-center space-y-8 mt-8">
             <div class="inline-block px-4 py-1.5 rounded-full bg-blue-100 text-blue-700 font-bold text-sm tracking-wide mb-4 shadow-sm">
-                臨床試驗的下一個世代
+                從單一蛋白到呼氣組學 (Breathomics)
             </div>
             <h1 class="text-4xl md:text-6xl font-black leading-tight text-gray-900">
-                呼氣冷凝採集技術 (EBC) <br>
-                <span class="gradient-text">重塑呼吸道疾病的黃金標準</span>
+                EBC 技術：捕捉肺部 <br>
+                <span class="gradient-text">完整的化學與生物特徵</span>
             </h1>
-            <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-600 leading-relaxed font-medium">
-                EBC 提供了一種完全無創、可重複且直接反映肺部微環境的採樣方式。它是連接「全身性血液檢查」與「侵入性支氣管鏡檢查」之間的關鍵缺失環節，為臨床研究與新藥開發帶來革命性的降本增效。
+            <p class="max-w-4xl mx-auto text-lg md:text-xl text-gray-600 leading-relaxed font-medium">
+                EBC 不僅能穩定採集特定的發炎蛋白 (SAA) 與真菌標記 (GM)，更是獲取 揮發性有機化合物 (VOCs) 與 代謝產物 的黃金視窗。透過全方位的呼氣分析，我們為臨床試驗提供比血液更精確、比活檢更安全的藥物動力學數據。
             </p>
         </section>
 
         <section id="value-prop" class="scroll-mt-24">
             <div class="mb-10">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-4 border-l-4 border-blue-600 pl-4">臨床採樣技術比較與痛點解決</h2>
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-4 border-l-4 border-blue-600 pl-4">臨床採樣技術比較與技術廣度</h2>
                 <p class="text-gray-600 text-lg leading-relaxed">
-                    傳統肺部檢測面臨兩難：支氣管肺泡灌洗 (BALF) 具備高精準度但侵入性風險極高，不適用於虛弱患者；而血液檢查雖然安全，但肺部標記物常被全身循環稀釋。EBC 技術完美跨越了這個鴻溝，實現了高頻次、零風險且高特異性的直接肺部上皮襯液 (ELF) 採樣。
+                    EBC 的商業優勢在於其數據捕捉的多樣性。相比於僅能檢測全身代謝的血液，EBC 能夠同時捕捉局部蛋白質組、代謝組及 VOC 指紋，為複雜疾病提供多維度的伴隨診斷支援。
                 </p>
             </div>
             
@@ -111,26 +95,26 @@
                 <div class="space-y-6">
                     <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-emerald-500">
                         <div class="flex items-center mb-2">
-                            <span class="text-2xl mr-3">🛡️</span>
-                            <h4 class="text-lg font-bold text-gray-900">零風險採樣 (取代 BALF)</h4>
+                            <span class="text-2xl mr-3">🔬</span>
+                            <h4 class="text-lg font-bold text-gray-900">蛋白質組學 (Proteomics)</h4>
                         </div>
-                        <p class="text-gray-600">僅需自主呼吸即可收集，完全消除了支氣管鏡帶來的氣胸、感染及出血風險，完美適用於 ICU 插管病人及幼童。</p>
+                        <p class="text-gray-600">穩定檢測 SAA、IL-1b 等細胞因子與真菌抗原 (GM)，適用於急性感染與慢性發炎監測。</p>
                     </div>
                     
                     <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-blue-500">
                         <div class="flex items-center mb-2">
-                            <span class="text-2xl mr-3">⏱️</span>
-                            <h4 class="text-lg font-bold text-gray-900">高頻次藥物動態監測</h4>
+                            <span class="text-2xl mr-3">🧪</span>
+                            <h4 class="text-lg font-bold text-gray-900">VOC 與代謝組學 (Metabolomics)</h4>
                         </div>
-                        <p class="text-gray-600">解決了活體組織檢查無法頻繁進行的痛點。EBC 可實現每日多次連續採樣，為新藥臨床試驗建立完整的藥物代謝時間軸。</p>
+                        <p class="text-gray-600">捕捉有毒醛類與脂肪酸代謝物。透過「呼氣指紋」技術，可進行無創的疾病模式識別與早期預警。</p>
                     </div>
                     
                     <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-pink-500">
                         <div class="flex items-center mb-2">
-                            <span class="text-2xl mr-3">🎯</span>
-                            <h4 class="text-lg font-bold text-gray-900">精準定位肺部微環境</h4>
+                            <span class="text-2xl mr-3">🧬</span>
+                            <h4 class="text-lg font-bold text-gray-900">表觀遺傳學 (Epigenetics)</h4>
                         </div>
-                        <p class="text-gray-600">直接獲取肺部上皮襯液，避免了血液檢查中標記物被全身循環稀釋的問題，生物標記濃度更具局部代表性。</p>
+                        <p class="text-gray-600">EBC 中的 DNA/RNA 甲基化分析已具備萬人級別的臨床篩查能力，開啟肺癌早篩新紀元。</p>
                     </div>
                 </div>
             </div>
@@ -138,56 +122,23 @@
 
         <section id="icu-market" class="scroll-mt-24 bg-blue-900 rounded-3xl p-8 md:p-12 text-white shadow-2xl relative overflow-hidden">
             <div class="absolute top-0 right-0 -mt-10 -mr-10 text-9xl opacity-10">🫁</div>
-            
             <div class="mb-10 relative z-10">
-                <span class="bg-blue-800 text-blue-200 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">戰略切入領域 A</span>
-                <h2 class="text-3xl font-extrabold mt-4 mb-4">重症監護與院內感染 (ICU & IPA)</h2>
+                <span class="bg-blue-800 text-blue-200 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">戰略領域 A & B：蛋白質標記</span>
+                <h2 class="text-3xl font-extrabold mt-4 mb-4">重症感染與氣喘精準醫療</h2>
                 <p class="text-blue-100 text-lg leading-relaxed max-w-4xl">
-                    在加護病房中，侵襲性肺麴黴病 (IPA) 是機械通氣患者的致命威脅。EBC 被證實能夠直接檢測半乳甘露聚醣 (GM)，成功替代高風險的侵入性 BALF 檢測，成為抗真菌藥廠與 ICU 設備商的關鍵診斷工具。
+                    針對 NCT06333379 (ICU-GM) 與 Yao-2024 (Asthma-SAA) 的研究結果，EBC 展現了在替代侵入性檢測與建立生物製劑篩選標準方面的強大實力。
                 </p>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 relative z-10">
-                <div class="bg-blue-800/50 backdrop-blur-md p-8 rounded-2xl border border-blue-700 flex flex-col justify-center items-center text-center">
-                    <p class="text-blue-300 font-semibold mb-2">臨床試驗實證 (NCT06333379)</p>
-                    <p class="text-6xl font-black text-white mb-2">75<span class="text-2xl text-blue-300 font-normal ml-2">名</span></p>
-                    <p class="text-sm text-blue-200">ICU 呼吸機患者參與，證實 EBC-GM 檢測在非侵入診斷中的高度準確性。</p>
-                </div>
-                
-                <div class="md:col-span-2 bg-white rounded-2xl p-6 shadow-inner text-gray-900">
-                    <h3 class="text-lg font-bold text-center mb-4">目標市場與潛在篩查規模對比</h3>
-                    <div class="chart-container h-64">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 relative z-10">
+                <div class="bg-white rounded-2xl p-6 shadow-inner text-gray-900">
+                    <h3 class="text-lg font-bold text-center mb-4">目標市場與潛在篩查規模</h3>
+                    <div class="chart-container">
                         <canvas id="doughnutChart"></canvas>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section id="asthma-market" class="scroll-mt-24">
-            <div class="mb-10">
-                <span class="bg-pink-100 text-pink-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">戰略切入領域 B</span>
-                <h2 class="text-3xl font-extrabold text-gray-900 mt-4 mb-4 border-l-4 border-pink-600 pl-4">氣喘與 COPD 精準醫療</h2>
-                <p class="text-gray-600 text-lg leading-relaxed">
-                    開發生物製劑 (Biologics) 的大型藥廠急需有效的表型分類 (Phenotyping) 工具。最新研究 (Yao-2024) 指出，透過分析 EBC 中的發炎因子，能精準反映氣喘的嚴重程度，為臨床試驗的病人篩選與療效評估提供黃金數據。
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                <div class="lg:col-span-5 space-y-6">
-                    <div class="bg-pink-50 p-6 rounded-2xl border border-pink-100">
-                        <h4 class="text-xl font-bold text-pink-900 mb-3">生物標記高度相關性</h4>
-                        <p class="text-pink-800 mb-4">EBC 中檢測到的血清澱粉樣蛋白 A (SAA) 等發炎因子，與患者的多項臨床指標呈現顯著正相關。這證明 EBC 是監測系統性與呼吸道局部發炎的可靠視窗。</p>
-                        <ul class="space-y-2 text-pink-700 font-medium">
-                            <li>🔬 輔助精準表型分類</li>
-                            <li>💊 加速生物製劑靶向篩選</li>
-                            <li>📊 提升臨床試驗成功率</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="lg:col-span-7 glass-card p-6 rounded-2xl shadow-lg">
-                    <h3 class="text-lg font-bold text-center text-gray-800 mb-2">SAA 生物標記與臨床指標相關係數 (Yao-2024)</h3>
-                    <p class="text-xs text-center text-gray-500 mb-4">數值越高代表正相關性越強 (P-value < .001)</p>
+                <div class="bg-white rounded-2xl p-6 shadow-inner text-gray-900">
+                    <h3 class="text-lg font-bold text-center mb-4">SAA 濃度與臨床指標相關性</h3>
                     <div class="chart-container">
                         <canvas id="barChart"></canvas>
                     </div>
@@ -195,48 +146,84 @@
             </div>
         </section>
 
+        <section id="voc-market" class="scroll-mt-24">
+            <div class="mb-10">
+                <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">戰略領域 C：VOCs 與代謝組學</span>
+                <h2 class="text-3xl font-extrabold text-gray-900 mt-4 mb-4 border-l-4 border-emerald-600 pl-4">肺部的化學指紋：VOCs 代謝剖析</h2>
+                <p class="text-gray-600 text-lg leading-relaxed">
+                    EBC 採樣包含關鍵的 揮發性有機化合物 (VOCs)。根據 NCT04192032，透過對有毒醛類的精確檢測，EBC 能夠評估電子煙對肺部的損害。NCT06189924 則展示了蛋白質與代謝物全譜分析的巨大潛力。
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 glass-card p-6 rounded-2xl shadow-lg">
+                    <h3 class="text-lg font-bold text-center text-gray-800 mb-2">EBC 代謝特徵分佈圖 (Metabolic Profiling)</h3>
+                    <p class="text-xs text-center text-gray-500 mb-4">氣泡大小代表臨床試驗中檢測到的物種頻率與商業價值</p>
+                    <div class="chart-container">
+                        <canvas id="vocBubbleChart"></canvas>
+                    </div>
+                </div>
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="bg-emerald-50 p-6 rounded-2xl border border-emerald-100">
+                        <h4 class="text-xl font-bold text-emerald-900 mb-3">有毒醛類監測 (Toxic Aldehydes)</h4>
+                        <p class="text-emerald-800 mb-4">EBC 能精確捕捉以下化學特徵，用於早期病變預警：</p>
+                        <ul class="space-y-2 text-emerald-700 font-medium">
+                            <li>🌫️ 甲醛/乙醛 (Formaldehyde/Acetaldehyde)</li>
+                            <li>🔥 丙烯醛 (Acrolein) - 氧化壓力指標</li>
+                            <li>🧫 差異化代謝產物 (Differential Metabolites)</li>
+                        </ul>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-md border-l-4 border-emerald-500">
+                        <h4 class="text-lg font-bold text-gray-900 mb-2">模式識別技術</h4>
+                        <p class="text-gray-600">結合機器學習演算法，分析 EBC 的化學指紋，開發出針對危重症的「疾病識別評分系統」。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="gtm-strategy" class="scroll-mt-24 bg-gray-50 border border-gray-200 rounded-3xl p-8 md:p-12 shadow-sm">
             <div class="text-center mb-16">
-                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">具體商業開發策略 (Go-to-Market)</h2>
+                <h2 class="text-3xl font-extrabold text-gray-900 mb-4">全方位商業開發策略</h2>
                 <p class="text-gray-600 text-lg max-w-2xl mx-auto">
-                    透過分階段的市場滲透策略，將 EBC 設備從實驗室研究工具，轉化為呼吸道新藥開發不可或缺的基石。
+                    我們提供的不只是設備，而是從蛋白質標記、VOCs 到代謝全譜的呼吸組學開發平台。
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white rounded-2xl p-8 shadow-md hover:-translate-y-2 transition-transform duration-300 border-t-8 border-blue-500 relative">
                     <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-black absolute -top-6 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-sm">1</div>
-                    <h3 class="text-xl font-bold text-center text-gray-900 mt-6 mb-4">CRO 合作夥伴關係</h3>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mt-6 mb-4">CRO & 藥廠合作</h3>
                     <p class="text-gray-600 text-center">
-                        與全球合約研究組織 (CRO) 建立深度合作，推動將 EBC 無創採樣流程正式列入呼吸道藥物臨床試驗的標準操作規範 (SOP)。
-                    </p>
-                </div>
-
-                <div class="bg-white rounded-2xl p-8 shadow-md hover:-translate-y-2 transition-transform duration-300 border-t-8 border-pink-500 relative">
-                    <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-2xl font-black absolute -top-6 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-sm">2</div>
-                    <h3 class="text-xl font-bold text-center text-gray-900 mt-6 mb-4">伴隨診斷 (CDx) 開發</h3>
-                    <p class="text-gray-600 text-center">
-                        推動 EBC 設備作為特定靶向藥物的伴隨診斷工具。確保新藥僅投予肺部特定生物標記呈陽性的患者，極大化臨床試驗成功率。
+                        將 EBC 整合至臨床試驗 SOP，提供比血液更豐富的局部藥物動力學 (PK) 與藥效學 (PD) 數據。
                     </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-md hover:-translate-y-2 transition-transform duration-300 border-t-8 border-emerald-500 relative">
-                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-2xl font-black absolute -top-6 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-sm">3</div>
-                    <h3 class="text-xl font-bold text-center text-gray-900 mt-6 mb-4">科研試劑盒套組化</h3>
+                    <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-2xl font-black absolute -top-6 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-sm">2</div>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mt-6 mb-4">VOC 伴隨診斷工具</h3>
                     <p class="text-gray-600 text-center">
-                        針對常見關鍵標記（如 8-isoprostane, Cytokines），推出開箱即用的「採集 + 檢測」一體化套組，大幅降低研究機構的使用門檻。
+                        針對環境毒理學與慢性肺病，開發基於 VOC 化學指紋的 LDT 檢測服務。
+                    </p>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:-translate-y-2 transition-transform duration-300 border-t-8 border-pink-500 relative">
+                    <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-2xl font-black absolute -top-6 left-1/2 transform -translate-x-1/2 border-4 border-white shadow-sm">3</div>
+                    <h3 class="text-xl font-bold text-center text-gray-900 mt-6 mb-4">AI 呼吸組學平台</h3>
+                    <p class="text-gray-600 text-center">
+                        積累大規模代謝組學數據，建立 AI 模型以預測疾病進展，為數位療法 (DTx) 提供生物標記。
                     </p>
                 </div>
             </div>
             
             <div class="mt-16 bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-center justify-between">
                 <div class="mb-6 md:mb-0 md:mr-8">
-                    <h3 class="text-2xl font-bold text-gray-900 mb-2">大規模肺癌篩查潛力</h3>
-                    <p class="text-gray-600">實證顯示 (NCT04913155)，EBC 具備支撐高達 12,100 人大規模臨床應用的量能，為表觀遺傳學與早期肺癌篩查 LDT 服務商開創千億級藍海市場。</p>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">12,100+ 人規模驗證</h3>
+                    <p class="text-gray-600">實證顯示 (NCT04913155)，EBC 採樣已成熟應用於超萬人規模研究，具備高度穩定性與可規模化優勢。</p>
                 </div>
                 <div class="flex-shrink-0 text-center">
-                    <div class="text-5xl font-black text-emerald-600 mb-1">12,100+</div>
-                    <div class="text-sm font-bold text-gray-500 uppercase tracking-widest">受試者規模驗證</div>
+                    <div class="text-5xl font-black text-emerald-600 mb-1">GLOBAL</div>
+                    <div class="text-sm font-bold text-gray-500 uppercase tracking-widest">SCALABLE SOLUTION</div>
                 </div>
             </div>
         </section>
@@ -244,7 +231,7 @@
     </main>
 
     <footer class="bg-gray-900 text-gray-400 py-8 text-center mt-12 border-t border-gray-800">
-        <p class="text-sm">EBC 臨床研究商業切入點分析報告 | 專為精準醫療與醫材開發設計</p>
+        <p class="text-sm">KONOS BIOMEDICAL | EBC 呼吸組學商業切入點分析報告</p>
     </footer>
 
     <script>
@@ -279,18 +266,15 @@
             }
         };
 
-        const rawRadarLabels = ['安全性與零風險', '高頻次採樣可行性', '肺部微環境特異性', '病患依從度'];
-        const radarLabels = rawRadarLabels.map(wrapLabel);
-
         const ctxRadar = document.getElementById('radarChart').getContext('2d');
         new Chart(ctxRadar, {
             type: 'radar',
             data: {
-                labels: radarLabels,
+                labels: ['安全性/零風險', '採樣頻率', '局部特異性', '化學多樣性', '依從度'].map(wrapLabel),
                 datasets: [
                     {
-                        label: 'EBC (呼氣冷凝)',
-                        data: [100, 100, 90, 100],
+                        label: 'EBC (呼氣組學)',
+                        data: [100, 100, 95, 95, 100],
                         backgroundColor: 'rgba(37, 99, 235, 0.2)',
                         borderColor: '#2563EB',
                         pointBackgroundColor: '#2563EB',
@@ -298,20 +282,11 @@
                         fill: true
                     },
                     {
-                        label: 'BALF (支氣管灌洗)',
-                        data: [20, 10, 100, 10],
+                        label: 'BALF (灌洗液)',
+                        data: [20, 10, 100, 100, 10],
                         backgroundColor: 'rgba(219, 39, 119, 0.2)',
                         borderColor: '#DB2777',
                         pointBackgroundColor: '#DB2777',
-                        borderWidth: 2,
-                        fill: true
-                    },
-                    {
-                        label: '傳統血液檢查',
-                        data: [90, 80, 30, 90],
-                        backgroundColor: 'rgba(107, 114, 128, 0.2)',
-                        borderColor: '#6B7280',
-                        pointBackgroundColor: '#6B7280',
                         borderWidth: 2,
                         fill: true
                     }
@@ -324,61 +299,49 @@
                     r: {
                         angleLines: { color: 'rgba(0, 0, 0, 0.1)' },
                         grid: { color: 'rgba(0, 0, 0, 0.1)' },
-                        pointLabels: {
-                            font: { family: 'Noto Sans TC', size: 12, weight: 'bold' },
-                            color: '#4B5563'
-                        },
+                        pointLabels: { font: { family: 'Noto Sans TC', weight: 'bold' } },
                         ticks: { display: false, max: 100, min: 0 }
                     }
                 },
                 plugins: {
-                    legend: { position: 'bottom', labels: { font: { family: 'Noto Sans TC' } } },
+                    legend: { position: 'top', labels: { font: { family: 'Noto Sans TC' } } },
                     tooltip: commonTooltipConfig
                 }
             }
         });
-
-        const rawDoughnutLabels = ['肺癌大規模篩查 (NCT04913155)', '氣喘與 COPD 精準分型', 'ICU 侵襲性肺麴黴病 (NCT06333379)'];
-        const doughnutLabels = rawDoughnutLabels.map(wrapLabel);
 
         const ctxDoughnut = document.getElementById('doughnutChart').getContext('2d');
         new Chart(ctxDoughnut, {
             type: 'doughnut',
             data: {
-                labels: doughnutLabels,
+                labels: ['肺癌篩查規模', '精準醫療對應', 'ICU 重症監測'].map(wrapLabel),
                 datasets: [{
                     data: [12100, 300, 75],
                     backgroundColor: ['#059669', '#DB2777', '#2563EB'],
-                    borderWidth: 0,
-                    hoverOffset: 4
+                    borderWidth: 0
                 }]
             },
             options: {
                 responsive: true,
                 maintainAspectRatio: false,
-                cutout: '65%',
+                cutout: '70%',
                 plugins: {
-                    legend: { position: 'right', labels: { font: { family: 'Noto Sans TC' } } },
+                    legend: { position: 'top', labels: { font: { family: 'Noto Sans TC' } } },
                     tooltip: commonTooltipConfig
                 }
             }
         });
 
-        const rawBarLabels = ['C反應蛋白 (CRP)', '身體質量指數 (BMI)', '介白素-6 (IL-6)', '患者年齡 (Age)'];
-        const barLabels = rawBarLabels.map(wrapLabel);
-
         const ctxBar = document.getElementById('barChart').getContext('2d');
         new Chart(ctxBar, {
             type: 'bar',
             data: {
-                labels: barLabels,
+                labels: ['CRP 相關性', 'BMI 相關性', 'IL-6 相關性', '年齡相關性'].map(wrapLabel),
                 datasets: [{
-                    label: '與 SAA 濃度相關係數 (r)',
+                    label: '相關係數 (r)',
                     data: [0.564, 0.454, 0.399, 0.310],
                     backgroundColor: '#DB2777',
-                    borderRadius: 6,
-                    barThickness: 'flex',
-                    maxBarThickness: 40
+                    borderRadius: 8
                 }]
             },
             options: {
@@ -386,19 +349,53 @@
                 responsive: true,
                 maintainAspectRatio: false,
                 scales: {
-                    x: {
-                        beginAtZero: true,
-                        max: 0.7,
-                        grid: { color: 'rgba(0, 0, 0, 0.05)' }
-                    },
-                    y: {
-                        grid: { display: false },
-                        ticks: { font: { family: 'Noto Sans TC', weight: 'bold' } }
-                    }
+                    x: { beginAtZero: true, max: 0.7 }
                 },
                 plugins: {
                     legend: { display: false },
                     tooltip: commonTooltipConfig
+                }
+            }
+        });
+
+        const ctxBubble = document.getElementById('vocBubbleChart').getContext('2d');
+        new Chart(ctxBubble, {
+            type: 'bubble',
+            data: {
+                datasets: [
+                    {
+                        label: '醛類 (Aldehydes)',
+                        data: [{ x: 2, y: 15, r: 25 }, { x: 3, y: 12, r: 20 }],
+                        backgroundColor: '#2563EB'
+                    },
+                    {
+                        label: '代謝組 (Metabolomics)',
+                        data: [{ x: 8, y: 25, r: 35 }, { x: 7, y: 28, r: 30 }],
+                        backgroundColor: '#059669'
+                    },
+                    {
+                        label: '發炎蛋白 (Proteins)',
+                        data: [{ x: 5, y: 40, r: 20 }],
+                        backgroundColor: '#DB2777'
+                    }
+                ]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    x: { title: { display: true, text: '分析複雜度', font: { weight: 'bold' } } },
+                    y: { title: { display: true, text: '臨床指標靈敏度', font: { weight: 'bold' } } }
+                },
+                plugins: {
+                    legend: { position: 'top', labels: { font: { family: 'Noto Sans TC' } } },
+                    tooltip: {
+                        callbacks: {
+                            label: function(context) {
+                                return context.dataset.label + ': ' + context.raw.r + ' 頻次單位';
+                            }
+                        }
+                    }
                 }
             }
         });
