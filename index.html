@@ -205,6 +205,31 @@ footer strong{color:#D6E2E3;font-family:"Noto Serif TC",serif;letter-spacing:.05
 .dz .tw-note{font-size:.82rem;color:#8C4417;margin:10px 0 0;padding-top:9px;border-top:1px dashed var(--line-strong)}
 .dz .tw-note b{color:var(--copper)}
 
+
+/* ---------- landscape chart ---------- */
+.lsc{margin-top:42px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:30px 28px 24px;box-shadow:0 1px 2px rgba(26,36,39,.04)}
+.lsc-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:16px;margin-bottom:24px;padding-bottom:20px;border-bottom:1px solid var(--line)}
+.lsc-n{font-family:"Noto Sans TC",sans-serif;font-size:2.7rem;font-weight:700;color:var(--copper);line-height:.95;letter-spacing:-.01em}
+.lsc-head p{margin:0;font-size:.95rem;color:var(--ink-soft);line-height:1.7;max-width:32em}
+.lsc-head b{color:var(--ink);font-weight:700}
+.lsc-row{display:grid;grid-template-columns:168px 1fr 42px;align-items:center;gap:0 12px;margin-bottom:11px}
+.lsc-lab{font-size:.87rem;color:var(--ink-soft);text-align:right;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lsc-track{position:relative;height:22px}
+.lsc-rest{position:absolute;left:0;top:0;height:22px;background:#C0B09A;border-radius:0 4px 4px 0;transition:background .15s}
+.lsc-voc{position:absolute;left:0;top:0;height:22px;background:var(--teal);border-radius:0 4px 4px 0;box-shadow:2px 0 0 0 var(--surface)}
+.lsc-v{position:absolute;top:0;font-size:.76rem;font-weight:700;color:var(--teal);line-height:22px;white-space:nowrap}
+.lsc-t{font-size:.95rem;font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+.lsc-row:hover .lsc-rest{background:#AE9B80}
+.lsc-legend{display:flex;flex-wrap:wrap;gap:22px;margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:.85rem;color:var(--ink-soft)}
+.lsc-sw{display:inline-block;width:13px;height:13px;border-radius:3px;margin-right:7px;vertical-align:-2px}
+.lsc-src{margin-top:14px;font-size:.79rem;line-height:1.7;color:var(--ink-faint)}
+@media(max-width:600px){
+  .lsc{padding:20px 16px 16px}
+  .lsc-row{grid-template-columns:96px 1fr 34px;gap:0 8px}
+  .lsc-lab{font-size:.76rem;white-space:normal;line-height:1.35}
+  .lsc-n{font-size:2.1rem}
+}
+
 @media(max-width:820px){
   .nav-links{display:none}
   .collab{grid-template-columns:1fr}
@@ -493,8 +518,73 @@ footer strong{color:#D6E2E3;font-family:"Noto Serif TC",serif;letter-spacing:.05
       </div>
     </div>
 
-    <h3 style="margin-top:56px;font-size:1.3rem"><span class="zh">胸腔科已經有人問過的問題</span><span class="en">Questions chest physicians have already asked with it</span></h3>
-    <p class="sec-intro" style="margin-top:10px"><span class="zh">以下依胸腔科相關性排序，每一格都對應已發表或已註冊的研究，並標出台灣本地的進展。</span><span class="en">Ordered by relevance to chest medicine. Each entry corresponds to published or registered work, with Taiwanese activity marked.</span></p>
+
+    <div id="landscape" style="scroll-margin-top:76px"></div>
+    <h3 style="margin-top:56px;font-size:1.3rem"><span class="zh">全球正在做什麼——以及還沒有人做什麼</span><span class="en">What is being done globally — and what is not</span></h3>
+
+    <div class="lsc">
+      <div class="lsc-head">
+        <div class="lsc-n">16%</div>
+        <p>
+          <span class="zh">ClinicalTrials.gov 上檢索得到的 <b>209 件</b>呼氣冷凝液臨床試驗中，只有 <b>34 件</b>用到揮發性代謝體（VOC）分析，其餘 <b>175 件</b>未涉及這一層資訊。</span>
+          <span class="en">Of the <b>209</b> exhaled breath condensate clinical trials retrievable on ClinicalTrials.gov, only <b>34</b> use volatile metabolite (VOC) analysis; the remaining <b>175</b> never touch this layer.</span>
+        </p>
+      </div>
+
+      <div class="lsc-row">
+        <div class="lsc-lab"><span class="zh">氣喘</span><span class="en">Asthma</span></div>
+        <div class="lsc-track"><div class="lsc-rest" style="width:100%"></div><div class="lsc-voc" style="width:14.3%"></div><div class="lsc-v" style="left:calc(14.3% + 8px)">10</div></div>
+        <div class="lsc-t">70</div>
+      </div>
+      <div class="lsc-row">
+        <div class="lsc-lab"><span class="zh">COPD</span><span class="en">COPD</span></div>
+        <div class="lsc-track"><div class="lsc-rest" style="width:40%"></div><div class="lsc-voc" style="width:5.7%"></div><div class="lsc-v" style="left:calc(5.7% + 8px)">4</div></div>
+        <div class="lsc-t">28</div>
+      </div>
+      <div class="lsc-row">
+        <div class="lsc-lab"><span class="zh">職業／環境暴露</span><span class="en">Occupational / environmental</span></div>
+        <div class="lsc-track"><div class="lsc-rest" style="width:40%"></div><div class="lsc-voc" style="width:10%"></div><div class="lsc-v" style="left:calc(10% + 8px)">7</div></div>
+        <div class="lsc-t">28</div>
+      </div>
+      <div class="lsc-row">
+        <div class="lsc-lab"><span class="zh">肺部感染／肺炎</span><span class="en">Lung infection / pneumonia</span></div>
+        <div class="lsc-track"><div class="lsc-rest" style="width:21.4%"></div><div class="lsc-voc" style="width:2.9%"></div><div class="lsc-v" style="left:calc(2.9% + 8px)">2</div></div>
+        <div class="lsc-t">15</div>
+      </div>
+      <div class="lsc-row">
+        <div class="lsc-lab"><span class="zh">囊狀纖維化／支擴</span><span class="en">Cystic fibrosis / bronchiectasis</span></div>
+        <div class="lsc-track"><div class="lsc-rest" style="width:17.1%"></div><div class="lsc-v" style="left:7px">0</div></div>
+        <div class="lsc-t">12</div>
+      </div>
+      <div class="lsc-row">
+        <div class="lsc-lab"><span class="zh">肺癌／肺結節</span><span class="en">Lung cancer / nodule</span></div>
+        <div class="lsc-track"><div class="lsc-rest" style="width:12.9%"></div><div class="lsc-voc" style="width:5.7%"></div><div class="lsc-v" style="left:calc(5.7% + 8px)">4</div></div>
+        <div class="lsc-t">9</div>
+      </div>
+      <div class="lsc-row">
+        <div class="lsc-lab"><span class="zh">重症／ARDS／呼吸器</span><span class="en">Critical care / ARDS / ventilator</span></div>
+        <div class="lsc-track"><div class="lsc-rest" style="width:12.9%"></div><div class="lsc-voc" style="width:4.3%"></div><div class="lsc-v" style="left:calc(4.3% + 8px)">3</div></div>
+        <div class="lsc-t">9</div>
+      </div>
+      <div class="lsc-row">
+        <div class="lsc-lab"><span class="zh">其他胸腔適應症</span><span class="en">Other thoracic indications</span></div>
+        <div class="lsc-track"><div class="lsc-rest" style="width:54.3%"></div><div class="lsc-voc" style="width:5.7%"></div><div class="lsc-v" style="left:calc(5.7% + 8px)">4</div></div>
+        <div class="lsc-t">38</div>
+      </div>
+
+      <div class="lsc-legend">
+        <span><span class="lsc-sw" style="background:var(--teal)"></span><span class="zh">已經有人用 VOC／代謝體做過</span><span class="en">Already studied with VOC / metabolomics</span></span>
+        <span><span class="lsc-sw" style="background:#C0B09A"></span><span class="zh">還沒有人做</span><span class="en">Not yet studied</span></span>
+      </div>
+
+      <div class="lsc-src">
+        <span class="zh"><strong style="color:var(--copper)">淺色的部分，就是可以切入的題目。</strong>睡眠呼吸中止、囊狀纖維化／支氣管擴張、慢性咳嗽這三類，全球掛零。<br>資料來源：ClinicalTrials.gov 檢索所得 209 件 EBC 相關臨床試驗（累計收案 63,545 人，含 107 件介入型、100 件觀察型），依各試驗登錄之 Target Population 與 EBC Substances Measured 欄位分類；「其他胸腔適應症」含睡眠呼吸中止、間質性肺病、慢性咳嗽／胃食道逆流、胸腔手術與移植、肺高壓等。整理日期 2026-09。</span>
+        <span class="en"><strong style="color:var(--copper)">The pale portion is where the open questions are.</strong> Sleep apnoea, cystic fibrosis / bronchiectasis and chronic cough are at zero worldwide.<br>Source: 209 EBC-related clinical trials retrieved from ClinicalTrials.gov (63,545 participants enrolled in total; 107 interventional, 100 observational), classified by each record's Target Population and EBC Substances Measured fields. “Other thoracic indications” covers sleep apnoea, interstitial lung disease, chronic cough / reflux, thoracic surgery and transplant, pulmonary hypertension and others. Compiled September 2026.</span>
+      </div>
+    </div>
+
+    <h3 style="margin-top:56px;font-size:1.3rem"><span class="zh">台灣本地的進展</span><span class="en">What is happening in Taiwan</span></h3>
+    <p class="sec-intro" style="margin-top:10px"><span class="zh">同樣依胸腔科相關性排序，每一格都對應已發表或已註冊的研究，並標出台灣本地已經走到哪裡。</span><span class="en">Ordered the same way. Each entry corresponds to published or registered work, with Taiwanese progress marked.</span></p>
 
     <div class="dz-grid">
       <div class="dz">
